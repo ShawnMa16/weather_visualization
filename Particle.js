@@ -7,8 +7,6 @@ class Particle {
             [165, 165, 192],
             [128, 179, 255],
             [255, 163, 26]
-            // color(255, 255, 255), color(0, 51, 204), color(165, 165, 192),
-            // color(128, 179, 255), color(255, 163, 26)
         ]
 
         this.size = map(size * getRandomArbitrary(0.5, 1.5), 0, 200, 2, 50)
@@ -43,7 +41,6 @@ class Particle {
 
     thunder() {
         ellipse(this.location.x, this.location.y, this.size, this.size)
-        // fill(0, 51, 204, 120 * Math.cos(this.lifeSpan))
         if (frameCount % 60 == 0) {
             fill(0, 51, 204, 120 * Math.cos(this.lifeSpan))
             this.lifeSpan -= Math.PI / 2 * 0.01
