@@ -11,7 +11,7 @@ function setup() {
 	createCanvas(900, 900)
 	noStroke()
 
-	
+
 	getWeathers(20, 100, 50, 300, 200)
 }
 
@@ -41,4 +41,6 @@ function getWeathers(sizeOfSnow, sizeOfThunder, sizeOfFog, sizeofRain, sizeOfSan
 			elements[type].push(element)
 		}
 	})
+
+	// background(0, 0, 0)
 }
